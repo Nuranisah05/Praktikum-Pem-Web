@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CART</title>
+  </head>
+  <body style="max-width: 1000px; border: 1px solid black; margin: auto; @media only screen and (max-width: 600px);">
+    <header style="background-color: lightgray">
+      <nav style="display: flex; align-items: center; padding: 10px; border-bottom: 1px solid black">
+        <ul style="margin-right: 50px; display: flex; list-style-type: none; gap: 10px">
+          <li>
+            <img style="width: 20px; vertical-align: sub" src="assets/hitam.png" alt=""/>
+            <b style="font-size: large">Online Shop</b>
+          </li>
+        </ul>
+
+        <ul style="display: flex; list-style-type: none; gap: 10px">
+          <li>
+            <!-- Home -->
+            <a href="/">Category 1</a> |
+          </li>
+          <li>
+            <!--- Current -->
+            <a href="/events">Category 2</a> |
+          </li>
+          <li>
+            <!-- Contact -->
+            <a href="/contact">Category 3</a>
+          </li>
+        </ul>
+
+        <ul style="margin-left: auto; display: flex; align-items: center; list-style-type: none; gap: 10px">
+          <li>
+            <img style="width: 30px" src="assets/pencarian.jpg" alt="">
+          </li>
+          <li style="display: flex; gap: 10px; align-items: center">
+            <img style="width: 30px" src="assets/OIP.jpg" alt="">
+            <p style="font-size: larger; padding-right: 20px">Cart(1)</p>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div style="display: flex; gap: 20px; margin-top: 10px; padding: 10px">
+      <main style="width: 60%">
+        <table>
+            <tbody>
+                <tr>
+                    <td style="display: flex; align-items: center;">
+                        <img style="width: 45px;" src="assets/centang.png" alt="">
+                        <p style="margin-left: 10px; font-size: 18px;">
+                            Order 192675<br>
+                            <b>Thank you, Orang</b>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <hr/>
+            <p class="col-head" style="font-size: larger;">You order is a confirmed.</p>
+            <p class="col-head" style="font-size: larger;">We've accepted your order and we're getting it ready.</p>
+            <hr/>
+        <h2>Costumer Information</h2>
+        <table style="width: 100%; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <td><b>Shipping Address</b></td>
+                    <td><b>Billing Address</b></td>
+                </tr>
+                <tr>
+                    <td>Orang</td>
+                    <td>Orang</td>
+                </tr>
+                <tr>
+                    <td><a href=" ">Kosan Putri<br>
+                        Jalan Mardhotilah no.35, samping Wisma Adam<br>
+                        Srengseng Sawah, Kecamatan Jagakarsa, Jakrta Selatan.</a></td>
+                    <td><a href=" ">Kosan Putri<br>
+                       Jalan Mardhotilah no.35, samping Wisma Adam<br>
+                       Srengseng Sawah, Kecamatan Jagakarsa, Jakrta Selatan.</a></td>
+                </tr>
+            </thead>
+        </table>
+        <table style="width: 100%; border-collapse: collapse; margin-top: 3%;">
+          <thead>
+            <tr style="margin-right: 30%;">
+              <td><b>Shipping Method</b></td>
+              <td><b>Payment Method</b></td>
+            </tr>
+            <tr>
+            <td>UPS Ground (Estimated ship<br>
+             time of 1-3 days)</td>
+            <td><img src="assets/visa.png" width="25%">Ending in 3217 - $23.60 </td>
+            </tr>
+          </thead>
+        </table>
+      </main>
+
+      <aside style="width: 335px; height: 300px; background-color:grey; padding: 10px; display: grid; align-items:center; padding-right: 2px;">
+        <h2 style="margin-bottom: 0%;">Summary ( 1 item )</h2>
+        <table style="width: 95%">
+          <tr style="padding: 10px 0">
+            <td style="padding: 10px 0"><b>Subtotal</b></td>
+            <td style="text-align: end"><b>$20.00</b></td>
+          </tr>
+          <tr style="padding: 10px 0">
+            <td style="padding: 10px 0"><b>Shipping</b></td>
+            <td style="text-align: end"><b>$2.20</b></td>
+          </tr>
+          <tr style="padding: 10px 0">
+            <td style="padding: 10px 0; border-bottom: 2px solid white"><b>Est. Taxes</b></td>
+            <td style="text-align: end; border-bottom: 2px solid white"><b>$1,40</b></td>
+          </tr>
+        </table>
+        <p style="font-size: 17px; margin-bottom: -2%; margin-top: 0%">Gift card or discount code</p>
+            <form method="post" style="align-items: center; margin-top: 0px; font-weight: bolder">
+                <input style="font-weight: bolder; border-color: black; height: 20px;" type="text"/>
+                <button type="submit" style="background-color: lightgray; height: 26px; width: 35%;">Apply</button>
+            </form>
+        <table style="width: 95%;">
+          <tr style="padding: 10px;">
+            <td style="padding: 10px; border-top: 2px solid white;"><b>TOTAL</b></td>
+            <td style="text-align: end; border-top: 2px solid white;;"><b>$23.60</b></td>
+          </tr>
+        </table>
+      </aside>
+    </div>
+    <footer style="margin-top: 25px; border-top: 1px solid black; padding: 20px; display: grid; gap: 10px">
+      <div class="baris" style="display: flex; gap: 10px;">
+        <b>site name</b>
+        <a href="">Category X</a> | <a href="">Category Y</a> |
+        <a href="">Category Z</a>
+        <h4 style="margin-left: 365px; margin-bottom:17px; margin-top: 0px;">Stay In Touch! Join our Newslatter.</h4>
+      </div>
+      <div class="baris" style="display: flex; gap: 5px; margin-top: -3%;">
+        <img src="assets/pembayaran.png" width="20%">
+        <div style="display: flex; align-items: center; margin-left: auto; font-weight: bolder">
+          <input style="font-weight: bolder; height: 15px" type="text" placeholder="Enter Email" />
+          <button type="submit" style="background-color: gray; height: 20px;">subcribe</button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
