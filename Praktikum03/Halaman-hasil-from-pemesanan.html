@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pemesanan Barang</title>
+</head>
+<body style="background-color: silver; margin-left: 2cm;">
+ <hr type="color:grey;">
+     <p style="text-align: center ;">A Web Page</p>
+         <table>
+             <thead>
+                 <tr>
+                    <th><img src="logo/icons8-arrow-26.png" width="100%"></th>
+                    <th><img src="logo/icons8-arrow-pointing-left-26.png" width="100%"></th>
+                    <th><img src="logo/icons8-close-30.png" width="100%"></th>
+                    <th><img src="logo/icons8-home-24.png" witdh="100%"></th>
+                    <th><img src="logo/http.jpg" width="100%"></th>
+                    <th><img src="logo/icons8-search-24.png" width="200%"></th>
+                 </tr>
+             </thead>
+         </table>
+</hr>
+     <div class="menu" style="background-color:  white; border: 2px solid; height: 45px; padding: 15px 5px 0px 16px; margin: 20px 15px 5px; width: 15cm; float: left;">
+        <table>
+            <tr style="font-size: 20px;">
+                <td>Home</td>
+                <td style="width: 120px; padding-left: 20px;">|</td>
+                <td>Generate Link</td>
+                <td style="width: 120px; padding-left: 20px;">|</td>
+                <td>Transaction History</td>
+                <td style="width: 140px; padding-left: 20px">|</td>
+                <td>Policy</td>
+                <td style="width: 130px; padding-left: 20px">|</td>
+                <td>Logout</td>
+            </tr>
+        </body>
+        </table>
+    </div>
+    <div style="float: left; padding: 30px 25px 0px 16px;">
+        <img src="logo/sepatu.jpg" height="220px" style="border: 3px solid;"> <br>
+        <input type="submit" value="Upload Picture" style="width: 130px; background-color: white;">
+    </div>
+    <div>
+        <form>
+            <table style="float: left; padding-top: 27px;">
+                <tbody>
+                <tr>
+                    <th>Title Here</th>
+                    <td>:</td>
+                    <td>Sneakers $190.000</td>
+                </tr>
+                <br>
+                 <tr>
+                     <th>Description</th>
+                     <td>:</td>
+                     <td>Year :2017
+                        <br><br>Model:
+                        <br><br>Condition: Mint 
+                     </td>
+                 </tr>
+                 <tr style="padding-top: 4px;">
+                     <th>Pay to</th>
+                     <td>:</td>
+                     <td>123.875.345.0</td>             
+                    </tr>
+                <tr style="padding-top: 4px;">
+                     <th>Payment Type</th>
+                     <td>:</td>
+                     <td style="padding-left: 15px;">
+                        <select id="payment type" style="border: 2px solid">
+                            <option value="Visa Debit">Visa Debit</option>
+                            <option value="Gopay">Gopay</option>
+                            <option value="Dana">Dana</option>
+                            <option Value="Shopee Pay">Shopee Pay</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr style="padding-top: 4px;">
+                    <th>Account Holder </th>
+                    <td>:</td>
+                    <td style="padding-left: 15px;">
+                        <input type="text" style="border: 2px solid;">
+                    </td>
+                </tr>
+                <tr style="padding-top: 4px">
+                    <th>Transaction</th>
+                    <td>:</td>
+                    <td style="padding-left: 15px;">
+                        <input type="number" min="1" max="8" style="border: 2px solid">
+                        <br>
+                    </td>
+                </tr>
+                 <tr style="padding-top: 4px;">
+                    <th></th>
+                    <td></td>
+                    <td style="padding-left: 10px; color: green;">
+                        <input type="checkbox" id="send-phone">
+                        <label for="send-phone">Send to Mobile Phone</label>
+                        <br>
+                        <input type="checkbox" id="send-email">
+                        <label for="send-email">Send to Email</label>
+                    </td>
+                </tr>
+                <tr style="padding-top: 4px;">
+                    <th>Send to Mobile Phone</th>
+                    <td>:</td>
+                    <td style="padding-left: 15px;"><input type="email" style="border: 2px solid;">
+                    </td>
+                </tr>
+                 <tr style="padding-top: 4px;">
+                    <th>Send to Email</th>
+                    <td>:</td>
+                    <td style="padding-left: 15px;">
+                        <input type="email" style="border: 2px solid;">
+                    </td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td></td>
+                    <td style="padding-left: 15px;"><input type="button" value="Pay using QuidLink" style="width: 150px; text-align: center; background-color: green; color: white; margin-top: 50px; width: 150px; height: 30px;">
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
