@@ -1,0 +1,33 @@
+body{
+    background-color: khaki;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+    text-align: center;
+    color:blue ;
+}
+#jawa p{
+    background-color:greenyellow;
+    text-align: center;
+    border:1px dotted black;
+    margin-left: 10%;
+    margin-right: 10%; 
+}
+#jawa {
+    background-color: green;
+}
+#soekarno {
+    font-style: italic;
+}
+img {
+    width: 20%;
+}
+.link{
+    margin-inline:inherit;
+    text-align: center;
+}
+.B {
+    font-size: 300%;
+    font-weight: bold;
+    color: blue;
+}
