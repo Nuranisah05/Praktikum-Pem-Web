@@ -1,0 +1,39 @@
+div {
+    display: inline-block;
+}
+.terserah {
+    background-color:green;
+    width: 1300px;
+    height: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.pisang {
+    background-color: yellow;
+    width: 250px;
+    height: 200px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.mangga {
+    background-color: orangered;
+    width: 1000px;
+    height: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.kelapa {
+    background-color: yellow;
+    width: 250px;
+    height: 200px;
+    margin-left: 20px;
+}
+.ayam {
+    background-color:aquamarine;
+    width: 1000px;
+    height: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
