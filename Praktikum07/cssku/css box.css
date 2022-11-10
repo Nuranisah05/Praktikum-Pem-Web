@@ -1,0 +1,14 @@
+*{
+    margin: auto;
+}
+.container {
+    background-color: yellow;
+    border: 1px solid black;
+    text-align: center;
+}
+img {
+    width: 20%;
+    margin: 10px 25px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
