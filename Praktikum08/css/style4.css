@@ -1,0 +1,57 @@
+body {
+     background-color: blueviolet;
+     text-align: center;
+}
+
+.header{
+     background-color: lightblue;
+     height: 15vh;
+     line-height: 15vh;
+     margin-bottom: 10px;
+}
+
+.main{
+     height: 70vh;
+     line-height: 70vh;
+     display: flex;
+     margin-bottom: 10px;
+}
+
+.footer{
+     background-color: lightblue;
+     height: 15vh;
+     line-height: 15vh;
+     margin-top: 10px;
+}
+
+.container{
+     display: flex;
+     flex-direction: column;
+}
+
+.aside{
+     background-color: silver;
+     width: 20%;
+}
+
+.article{
+     background-color: yellowgreen;
+     width: 80%;
+}
+
+.section{
+     display: flex;
+     justify-content: center;
+}
+
+.section img{
+     width: 20%;
+     margin:0.9em;
+}
+
+.article{
+     margin-left: 10px;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-end;
+}
