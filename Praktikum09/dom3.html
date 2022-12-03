@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Penjumlahan</title>
+</head>
+<body>
+    <input type="number" id="bilangan_1" onchange="hitung_bilangan()">
+    <br>
+    <label>+</label>
+    <br>
+    <input type="number" id="bilangan_2" onchange="hitung_bilangan()">
+    <br>
+    <label>=</label>
+    <br>
+    <input type="number" id="hasil">
+
+
+    <script>
+        function hitung_bilangan() {
+            let angka1 = document.getElementById("bilangan_1").value;
+            let angka2 = document.getElementById("bilangan_2").value;
+            let jumlahkan = parseInt(angka1) + parseInt(angka2);
+
+            document.getElementById("hasil").value = jumlahkan;
+        }
+    </script>
+</body>
+</html>

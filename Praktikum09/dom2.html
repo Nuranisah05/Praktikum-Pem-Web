@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs Rupiah</title>
+</head>
+<body>
+    <h2>Dolar to Rupiah</h2>
+    <h4>Nilai Kurs Rupiah = Rp. 14.650</h4>
+    <label for="dolar">Dolar =</label>
+    <input type="number" id="dolar">
+    <br>
+    <span id="hasil"></span>
+    <br>
+    <button type="button" onclick="hitung_dolar()">Hitung</button>
+
+    <hr>
+    <br>
+
+    <h2>Rupiah to Dolar</h2>
+    <label for="rupiah">Rupiah =</label>
+    <input type="number" id="rupiah">
+    <br>
+    <span id="hasil2"></span>
+    <br>
+    <button type="button" onclick="hitung_rupiah()">Hitung</button>
+
+
+
+    <script>
+        function hitung_dolar() {
+            let rp = 14650;
+            let d = document.getElementById("dolar").value;
+            let h = d*rp;
+            document.getElementById("hasil").innerHTML = "Hasil = Rp." + h;
+        }
+
+
+        function hitung_rupiah(){
+            let rp2 = document.getElementById("rupiah").value;
+            let h = rp2*(1/14650);
+            document.getElementById("hasil2").innerHTML = "Dollar = $" + h.toFixed(2);
+        }
+    </script>
+</body>
+</html>
