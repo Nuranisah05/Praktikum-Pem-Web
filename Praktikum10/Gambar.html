@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+</head>
+<body>
+    <select name="dropdown_img" id="dropdown_img" onchange="gambar()">
+        <option hidden>---Pilih Gambar---</option>
+        <option value="gorila">Gorila</option>
+        <option value="singa">Singa</option>
+        <option value="elang">Elang</option>
+    </select>
+    <br>
+    <img alt="gambar" id="image">
+
+    <script>
+        function gambar() {
+            let drop_img = document.getElementById("dropdown_img").value;
+            let image = document.getElementById("image");
+
+            if (drop_img == "gorila") {
+                image.setAttribute(
+                    "src",
+                    "https://img.remediosdigitales.com/04a8eb/harambe/1366_2000.jpg"
+                );
+                    alert("ini gambar gorila");
+            } else if (drop_img == "singa") {
+               image.setAttribute(
+                    "src",
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM09n4PrGEXKvsweqKiaWWMECLC-EcNXDmQQ&usqp=CAU"
+                );
+               alert("ini gambar singa") 
+            } else if (drop_img == "elang") {
+               image.setAttribute(
+                    "src",
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Ahj9uWcRGsbJFPZX6PcA7PE8ERW7wbY7Tw&usqp=CAU"
+                );
+               alert("ini gambar elang") 
+            }
+        }
+    </script>
+</body>
+</html>

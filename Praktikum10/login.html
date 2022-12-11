@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            margin: 10%;
+        }
+
+        .container {
+            background-color: cyan;
+            border-radius: 8px;
+            box-shadow: 1px 1px 8px blueviolet;
+            height: 400px;
+            margin: 1em 8em;
+        }
+
+        body {
+            background-color:lightcyan;
+        }
+
+        .forgotpw {
+            color: blue;
+            font-size: 10pt;
+            margin-top: 3px;
+            text-align: right;
+        }
+
+        .content {
+            padding: 15px 40px;
+        }
+
+        .main {
+            letter-spacing: 4px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: blueviolet;
+            text-align: center;
+            border-radius: 20px;
+            border: none;
+            box-shadow: 1px 1px 8px red;
+            color: white;
+            height: 42px;
+            margin: 0 auto;
+            margin-top: 50px;
+            width: 150px;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .border {
+            height: 1px;
+            width: 100%;
+            background-color: black;
+        }
+
+        .input {
+            background-color: cyan;
+            border: cyan;
+        }
+    </style>
+
+    <script>
+        function dekor1() {
+            dekor_1 = document.getElementById("home");
+            dekor_1.style.color = "aqua";
+        }
+
+        function dekor2() {
+            dekor_2 = document.getElementById("home");
+            dekor_2.style.color = "black";
+        }
+
+        function cekform() {
+            let uname = document.getElementById("username").value;
+            let pw = document.getElementById("password").value;
+
+            if(uname != "mrafibaihaki" || pw != "baihaki123") {
+                alert("Username atau Password yang anda masukan salah!")
+            }else{
+                document.getElementById("login").href = `index2.html`
+            }
+        }
+    </script>
+</head>
+<body>
+    <a href="" onmouseover="dekor1()" onmouseout="dekor2()" id="home"><h1>Welcome to Nuranisah's Login Form Authentication</h1></a>
+    <hr>
+    <br>
+    <div class="container">
+        <div class="content">
+            <div class="main">
+                <h2>LOGIN</h2>
+                <div class="garis">
+
+                </div>
+            </div>
+            <form method="post" class="form">
+                <label for="username">Username</label>
+                <input type="text" name="username" value="" class="input" id="username">
+                <div class="border"></div>
+
+                <label for="password">Password</label>
+                <input type="Password" name="password" value="" class="input" id="password">
+                <div class="border"></div>
+                <a href="#">
+                    <p class="forgotpw">Lupa Password?</p>
+                </a>
+                <a id="login" class="button" onclick="cekform()">LOGIN</a>
+            </form>
+        </div>
+    </div>
+    
+    <footer>
+        <p><b>Membuat contoh login form autentikasi</b><br>
+            Masukan Username : nransh55 
+            <br> Password : nisah123</p>
+    </footer>
+</body>
+</html>

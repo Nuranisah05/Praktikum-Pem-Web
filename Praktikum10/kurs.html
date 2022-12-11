@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs Matauang</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        table {
+            border: solid black;
+        }
+
+        .tabel {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+
+    <script>
+        function dekor1() {
+            dekor_1 = document.getElementById("home");
+            dekor_1.style.color = "aqua";
+        }
+
+        function dekor2() {
+            dekor_2 = document.getElementById("home");
+            dekor_2.style.color = "black";
+        }
+
+        function kalkulator() {
+            let inputan1 = document.getElementById("inputan").value;
+            let mata_uang = document.getElementById("matauang").value;
+            console.log(inputan1 * mata_uang);
+            let area_hasil = document.getElementById("hasil");
+            area_hasil.innerHTML = inputan1 * mata_uang;
+            
+        }
+    </script>
+</head>
+<body>
+    <a href="" onmouseover="dekor1()" onmouseout="dekor2()" id="home"><h1>Welcome to Nuranisah's Exchange Rate Calculator</h1></a>
+    <hr>
+    <br>
+    <div class="tabel">
+        <table style="width: 50%;"> 
+            <tr>
+                <td>Masukan Nilai</td>
+                <td>Mata Uang</td>
+                <td>Nilai Rupiah</td>
+            </tr>
+            <tr>
+                <td><input type="number" id="inputan" onchange="kalkulator()"></td>
+                <td><select id="matauang" onchange="kalkulator()">
+                    <option value="9915">Dollar US</option>
+                    <option value="13472">Dollar Singapore</option>
+                    <option value="874">Ringgit Malaysia</option>
+                    <option value="120">Yen Japan</option>
+                    <option value="15888">Euro</option>
+                    <option value="3592">Riyal Arab Saudi</option>
+                </select></td>
+                <td><p id="hasil"></p></td>
+            </tr>
+         </table>
+    </div>
+</body>
+</html>
